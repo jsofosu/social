@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './tabs/about.dart';
 import './tabs/photos.dart';
+import '../settings.dart';
 
 class Profile extends StatelessWidget {
   @override
@@ -13,7 +14,10 @@ class Profile extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.settings),
               color: Colors.black54,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Settings()));
+              },
             ),
           ],
           backgroundColor: Colors.transparent,
