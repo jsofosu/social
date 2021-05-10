@@ -25,108 +25,105 @@ class Profile extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Center(
-            child: Column(
-                // mainAxisSize: MainAxisSize.max,
-                children: [
-                  Container(
-                    margin: EdgeInsets.only(bottom: 10),
-                    height: 115,
-                    width: 115,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(29),
-                      image: DecorationImage(
-                          image: AssetImage('images/mann.jpg'),
-                          fit: BoxFit.cover),
-                    ),
-                  ),
-                  Text(
-                    'Harry Jasin',
-                    style: TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Clothing Influencer',
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.grey.shade700,
-                      height: 0.8,
-                      //  letterSpacing: 0.1,
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(30, 20, 30, 15),
-                    width: MediaQuery.of(context).size.width,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Likes('30K', 'Product likes'),
-                        Likes('2.1K', 'Product Sold'),
-                        Likes('3500', 'Followers'),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    margin: EdgeInsets.fromLTRB(30, 10, 30, 0),
-                    child: Row(
-                      children: [
-                        Container(
-                          width: 210,
-                          height: 50,
-                          child: Center(
-                            child: Text(
-                              'Book',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                              ),
-                            ),
+            child: Column(children: [
+              Container(
+                margin: EdgeInsets.only(bottom: 10),
+                height: 115,
+                width: 115,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(29),
+                  image: DecorationImage(
+                      image: AssetImage('images/mann.jpg'), fit: BoxFit.cover),
+                ),
+              ),
+              Text(
+                'Harry Jasin',
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              SizedBox(height: 8),
+              Text(
+                'Clothing Influencer',
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey.shade700,
+                  height: 0.8,
+                  //  letterSpacing: 0.1,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(30, 20, 30, 15),
+                width: MediaQuery.of(context).size.width,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Likes('30K', 'Product likes'),
+                    Likes('2.1K', 'Product Sold'),
+                    Likes('3500', 'Followers'),
+                  ],
+                ),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                margin: EdgeInsets.fromLTRB(30, 10, 30, 0),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 210,
+                      height: 50,
+                      child: Center(
+                        child: Text(
+                          'Book',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
                           ),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.redAccent),
                         ),
-                        Icoons(Icons.mail_outlined),
-                        Icoons(Icons.more_vert),
-                      ],
+                      ),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.redAccent),
                     ),
-                  ),
-                  SizedBox(height: 10),
-                  Container(
-                    child: TabBar(
-                      unselectedLabelColor: Colors.grey,
-                      labelColor: Colors.black,
-                      indicatorColor: Colors.red,
-                      indicatorSize: TabBarIndicatorSize.label,
-                      //indicatorWeight: 5,
-                      tabs: [
-                        Tab(
-                          child: Text('About'),
-                        ),
-                        Tab(
-                          child: Text('Photos'),
-                        ),
-                        Tab(
-                          child: Text('Collection'),
-                        )
-                      ],
+                    Icoons(Icons.mail_outlined),
+                    Icoons(Icons.more_vert),
+                  ],
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                child: TabBar(
+                  unselectedLabelColor: Colors.grey,
+                  labelColor: Colors.black,
+                  indicatorColor: Colors.red,
+                  indicatorSize: TabBarIndicatorSize.label,
+                  //indicatorWeight: 5,
+                  tabs: [
+                    Tab(
+                      child: Text('About'),
                     ),
-                  ),
-                  Container(
-                    height: (MediaQuery.of(context).size.height) / 4 + 180,
-                    child: TabBarView(
-                      children: [
-                        AboutTab(),
-                        Photos(),
-                        Icon(Icons.ac_unit),
-                      ],
+                    Tab(
+                      child: Text('Photos'),
                     ),
-                  )
-                ]),
+                    Tab(
+                      child: Text('Collection'),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: (MediaQuery.of(context).size.height) / 4 + 180,
+                child: TabBarView(
+                  children: [
+                    AboutTab(),
+                    Photos(),
+                    Icon(Icons.ac_unit),
+                  ],
+                ),
+              )
+            ]),
           ),
         ),
       ),
