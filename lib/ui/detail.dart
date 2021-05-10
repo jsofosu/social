@@ -36,17 +36,21 @@ class Details extends StatelessWidget {
         ),
       ),
       child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
           backgroundColor: Colors.transparent,
-          appBar: AppBar(
-            leading: IconButton(
-              icon: Icon(Icons.arrow_back_ios),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-          )),
+          elevation: 0,
+        ),
+        body: Column(
+          children: [],
+        ),
+      ),
     );
   }
 }
