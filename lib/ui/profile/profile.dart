@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './tabs/about.dart';
 import './tabs/photos.dart';
 import '../settings.dart';
+import 'package:social/widgets/bottomnavigation.dart';
 
 class Profile extends StatelessWidget {
   @override
@@ -9,14 +10,19 @@ class Profile extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        extendBody: true,
         appBar: AppBar(
           actions: [
             IconButton(
               icon: Icon(Icons.settings),
               color: Colors.black54,
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Settings()));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Settings(),
+                  ),
+                );
               },
             ),
           ],
@@ -34,7 +40,9 @@ class Profile extends StatelessWidget {
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(29),
                   image: DecorationImage(
-                      image: AssetImage('images/mann.jpg'), fit: BoxFit.cover),
+                    image: AssetImage('images/mann.jpg'),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Text(
@@ -99,7 +107,6 @@ class Profile extends StatelessWidget {
                   labelColor: Colors.black,
                   indicatorColor: Colors.red,
                   indicatorSize: TabBarIndicatorSize.label,
-                  //indicatorWeight: 5,
                   tabs: [
                     Tab(
                       child: Text('About'),
@@ -126,6 +133,9 @@ class Profile extends StatelessWidget {
             ]),
           ),
         ),
+        bottomNavigationBar: Bottom(),
+        floatingActionButton: FloatingButton(),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
