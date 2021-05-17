@@ -9,14 +9,26 @@ class Data {
 
 class Info with ChangeNotifier {
   List<Data> collection = [
-    Data(name: 'Blazer', image: 'images/7.jpeg', colour: Colors.grey),
-    Data(name: 'Blazer', image: 'images/man1.jpeg', colour: Colors.blue),
     Data(
       name: 'Blazer',
-      image: 'images/y.jpeg',
-      colour: Colors.yellow,
+      image: 'images/sweater.jpeg',
+      colour: Colors.grey,
     ),
-    Data(name: 'Blazer', image: 'images/11.jpeg', colour: Colors.pinkAccent),
+    Data(
+      name: 'Blazer',
+      image: 'images/gym.jpeg',
+      colour: Color(0xff0063ee),
+    ),
+    Data(
+      name: 'Blazer',
+      image: 'images/6 2.jpeg',
+      colour: Color(0xffcea400),
+    ),
+    Data(
+      name: 'Blazer',
+      image: 'images/11.jpeg',
+      colour: Color(0xffedadc8),
+    ),
     Data(
       name: 'Blazer',
       image: 'images/1.jpeg',
@@ -24,17 +36,17 @@ class Info with ChangeNotifier {
     ),
     Data(
       name: 'Blazer',
-      image: 'images/man.jpg',
+      image: 'images/sweat.jpeg',
       colour: Colors.grey,
     ),
     Data(
       name: 'Blazer',
-      image: 'images/4.jpeg',
-      colour: Colors.grey,
+      image: 'images/man1 2.jpeg',
+      colour: Color(0xff0275b8),
     ),
     Data(
       name: 'Blazer',
-      image: 'images/9.jpeg',
+      image: 'images/7.jpeg',
       colour: Colors.grey,
     ),
     Data(
