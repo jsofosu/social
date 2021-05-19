@@ -42,7 +42,6 @@ class _DetailsState extends State<Details> {
         ),
         body: Container(
           margin: EdgeInsets.fromLTRB(30, 10, 20, 40),
-          //height: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.end,
@@ -76,7 +75,6 @@ class _DetailsState extends State<Details> {
                       widget: widget,
                       number: 2,
                     ),
-                    //SizedBox(width: 20),
                     Column(
                       children: [
                         Container(
@@ -115,7 +113,6 @@ class _DetailsState extends State<Details> {
               ),
               SizedBox(height: 10),
               Container(
-                //color: Colors.blue,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -129,8 +126,6 @@ class _DetailsState extends State<Details> {
                     ),
                     Container(
                       child: Column(
-                        // mainAxisSize: MainAxisSize.min,
-                        //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(
                             Icons.remove_red_eye,
@@ -141,7 +136,6 @@ class _DetailsState extends State<Details> {
                             text: '198.1k',
                             color: Colors.white,
                             size: 15,
-                            // height: 0.5,
                           ),
                         ],
                       ),
