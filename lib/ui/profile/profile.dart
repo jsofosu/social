@@ -143,20 +143,25 @@ class Profile extends StatelessWidget {
 
 class Icoons extends StatelessWidget {
   final IconData icon;
+
   Icoons(this.icon);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 50,
-        width: 55,
-        margin: EdgeInsets.only(left: 20),
-        decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.grey.shade200,
-            ),
-            borderRadius: BorderRadius.circular(5)),
-        child: IconButton(icon: Icon(icon), onPressed: () {}));
+      height: 50,
+      width: 55,
+      margin: EdgeInsets.only(left: 20),
+      decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.grey.shade200,
+          ),
+          borderRadius: BorderRadius.circular(5)),
+      child: IconButton(
+        icon: Icon(icon),
+        onPressed: () {},
+      ),
+    );
   }
 }
 
