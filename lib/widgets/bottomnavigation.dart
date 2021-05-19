@@ -16,11 +16,27 @@ class Bottom extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            BottomTabs(Icons.book, 'Feed'),
-            BottomTabs(Icons.search, 'Search'),
+            BottomTabs(
+              bottomicon: Icons.book,
+              iconname: 'Feed',
+              colour: Colors.grey,
+            ),
+            BottomTabs(
+              bottomicon: Icons.search,
+              iconname: 'Search',
+              colour: Colors.grey,
+            ),
             SizedBox(width: 10),
-            BottomTabs(Icons.shopping_cart, 'Cart'),
-            BottomTabs(Icons.account_circle_sharp, 'Profile'),
+            BottomTabs(
+              bottomicon: Icons.shopping_cart,
+              iconname: 'Cart',
+              colour: Colors.grey,
+            ),
+            BottomTabs(
+              bottomicon: Icons.account_circle_sharp,
+              iconname: 'Profile',
+              colour: Colors.redAccent,
+            ),
           ],
         ),
       ),
@@ -31,8 +47,9 @@ class Bottom extends StatelessWidget {
 class BottomTabs extends StatefulWidget {
   final IconData bottomicon;
   final String iconname;
+  final Color colour;
 
-  BottomTabs(this.bottomicon, this.iconname);
+  BottomTabs({this.bottomicon, this.iconname, this.colour});
   @override
   _BottomTabsState createState() => _BottomTabsState();
 }
@@ -46,13 +63,13 @@ class _BottomTabsState extends State<BottomTabs> {
         Icon(
           widget.bottomicon,
           size: 23,
-          color: touch ? Colors.yellow : Colors.grey,
+          color: widget.colour,
         ),
         Text(
           widget.iconname,
           style: TextStyle(
             fontSize: 14,
-            color: touch ? Colors.red : Colors.grey,
+            color: widget.colour,
           ),
         ),
       ],
