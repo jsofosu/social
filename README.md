@@ -4,12 +4,12 @@ A new Flutter project.
 
 ## Screenshots
 
-Home  | Collection
+About  | Photos
 ----- | ----------
-![Home](/screenshot/about.png) | ![Collection](/screenshot/photos.png)
+![About](/screenshot/about.png) | ![Photos](/screenshot/photos.png)
 
-Home  | Collection
+Detail  | Settings
 ----- | ----------
-![Home](/screenshot/detail.png) | ![Collection](/screenshot/settings.png)
+![Detail](/screenshot/detail.png) | ![Settings](/screenshot/settings.png)
 
 
