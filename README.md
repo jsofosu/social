@@ -1,6 +1,6 @@
-# social
+# Social Commerce App UI Flutter Clone
 
-A new Flutter project.
+## Dribble Reference by Hari Haran
 
 ## Screenshots
 
