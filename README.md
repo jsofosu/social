@@ -1,4 +1,5 @@
 # Social Commerce App UI Flutter Clone
+Flutter social app for people to promote their brands and sell products. Works on both android and ios.
 
 ## Dribbble Reference by [Hari Haran](https://dribbble.com/HariharnUx_F22)
 
@@ -15,6 +16,9 @@ Detail  | Settings
 ![Detail](/screenshot/detail.png) | ![Settings](/screenshot/settings.png)
 
 ## Features
+* Display photos of products
+* View collaborations and intro in the about section 
+* Access to available collections 
 * Beautiful Design
 * Readable code
 * Easy Navigation
@@ -26,3 +30,8 @@ Detail  | Settings
 ## Technologies
 * Dart 2.12.2
 * Flutter 2.0.4
+
+## Third Party Packages
+
+ [provider](https://pub.dev/packages/provider) for state management
+
